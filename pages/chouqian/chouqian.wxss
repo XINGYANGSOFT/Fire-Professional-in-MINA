@@ -1,0 +1,42 @@
+/* pages/chouqian/chouqian.wxss */
+.tit{
+    padding-top: 20rpx;
+    padding-left: 20rpx;
+}
+.tit text{
+    font-size: 26rpx;
+    color: #9B9B9B;
+}
+.sel{
+    background: #FFFFFF;
+    padding: 0 0 0 30rpx;
+    margin-top: 20rpx;
+}
+.sel .list{
+    height: 70rpx;
+    border-bottom: 1rpx solid #E6E6EA;
+    padding-top: 30rpx;
+    font-size: 34rpx;
+}
+.sel icon{
+    margin-right: 50rpx;
+    height: 39rpx;
+    width: 25rpx;
+    float: right;    
+}
+.cq{
+    font-size: 26rpx;
+    color: #9B9B9B;
+    margin-top: 30rpx;
+    padding-left: 20rpx;
+    display: block;
+}
+.cqinput{
+    background: #FFFFFF;
+    height: 90rpx;
+    margin-top: 20rpx;
+    padding-left: 20rpx;
+}
+.submit{
+    margin-top: 20rpx;
+}

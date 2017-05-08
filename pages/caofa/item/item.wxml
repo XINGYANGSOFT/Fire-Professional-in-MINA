@@ -1,0 +1,47 @@
+<!--pages/caofa/item/item.wxml-->
+<view class="title">
+    <text class="name">{{qc[0].name}}\n</text>
+</view>
+<view class="intro">
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">训练目的\n</text>
+        <text class="neirong">通过训练，使参训人员掌握石油液化气槽罐车泄露处置的程序和方法，提高指挥员的指挥能力和班组协同作战能力{{qc[0].mudi}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">场地设置\n</text>
+        <text class="neirong">{{qc[0].changdi}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">灾情设定\n</text>
+        <text class="neirong">{{qc[0].zaiqing}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">人员编成\n</text>
+        <text class="neirong">{{qc[0].renyuan}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">操作程序\n</text>
+        <text class="neirong">{{qc[0].caozuo}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">总结讲评\n</text>
+        <text class="neirong">{{qc[0].zongjie}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">行动要求\n</text>
+        <text class="neirong">{{qc[0].yaoqiu}}</text>
+    </view>
+    <view class="h1">
+        <view class="sk"></view>
+        <text class="tit">评判标准\n</text>
+        <text class="neirong">{{qc[0].pingpan}}</text>
+    </view>
+</view>
+

@@ -1,0 +1,34 @@
+<!--pages/item/item.wxml-->
+<image class="pic" src="{{pic}}"></image>
+<view class="title">
+    <text class="name">{{qc[0].name}}\n</text>
+    <text class="lei">{{qc[0].fenlei}}</text>
+</view>
+<view class="intro">
+    <view class="h1">
+        <text class="tit">1、组成</text>
+        <text class="neirong">{{qc[0].zucheng}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">2、性能</text>
+        <text class="neirong">{{qc[0].xingneng}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">3、用途</text>
+        <text class="neirong">{{qc[0].yongtu}}</text>
+    </view>
+    <view class="h1">
+        <view class="h2">
+            <text class="tit">4、使用\n</text>
+            <text class="tit1">方法</text>
+        </view>
+        <text class="neirong">{{qc[0].shiyong}}</text>
+    </view>
+    <view class="h1">
+        <view class="h2">
+            <text class="tit">5、注意\n</text>
+            <text class="tit1">事项</text>
+        </view>
+        <text class="neirong">{{qc[0].zhuyi}}</text>
+    </view>
+</view>

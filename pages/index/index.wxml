@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="search"  bindtap="bindFocus">
+  <input class="search_box" placeholder="搜索" bindfocus="bindFocus"/>
+</view>
+
+<scroll-view class="body" scroll-y="ture">
+    <navigator class="item" url="/pages/item/item?id={{item.id}}" wx:for="{{qclist}}">
+        <view>
+            <text>{{item.name}}</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</scroll-view>

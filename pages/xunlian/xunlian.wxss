@@ -1,0 +1,40 @@
+/* pages/xunlian/xunlian.wxss */
+.search{
+  height: 80rpx;
+  width: 100%;
+  background: #EFEFF4;
+  /*position: fixed;*/
+  z-index: 8;
+}
+.search_box{
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+  border-radius: 5.52px;
+  margin: 15rpx 15rpx 10rpx 15rpx;
+  height: 60rpx;
+  text-align:center;
+  width: calc(100% - 30rpx);
+  z-index: 8;
+}
+.body{
+  /*padding-top: 100rpx;*/
+  /*position: relative;*/
+  z-index: 0;
+}
+.item{
+  background: #FFFFFF;
+  padding: 30rpx 0 0 30rpx;
+}
+.item view{
+  height: 70rpx;
+  border-bottom: 1rpx solid #E6E6EA;
+}
+.item text{
+  font-size: 34rpx;
+}
+.item image{
+  margin-right: 30rpx;
+  height: 39rpx;
+  width: 25rpx;
+  float: right;
+}

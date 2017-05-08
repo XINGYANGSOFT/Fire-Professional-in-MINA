@@ -1,0 +1,28 @@
+<!--pages/xunlian/item/item.wxml-->
+<view class="title">
+    <text class="name">{{qc[0].name}}\n</text>
+    <text class="lei">{{qc[0].fenlei}}</text>
+</view>
+<view class="intro">
+    <view class="h1">
+        <text class="tit">训练目的</text>
+        <text class="neirong">{{qc[0].mudi}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">场地器材</text>
+        <text class="neirong">{{qc[0].qichai}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">操作程序</text>
+        <text class="neirong">{{qc[0].caozuo}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">操作要求</text>
+        <text class="neirong">{{qc[0].yaoqiu}}</text>
+    </view>
+    <view class="h1">
+        <text class="tit">成绩评定</text>
+        <text class="neirong">{{qc[0].chengji}}</text>
+    </view>
+</view>
+

@@ -1,0 +1,43 @@
+/* pages/caofa/item/item.wxss */
+.title{
+    height: 90rpx;
+    background: #ffffff;
+    padding: 35rpx 0 0 20rpx;
+}
+.title .name{
+    width: 100%;
+    font-size: 38rpx;
+}
+.title .lei{
+    font-size: 26rpx;
+    color: #9B9B9B;
+}
+.intro{
+    background: #ffffff;
+    min-height:100%; 
+    margin-top: 10rpx;
+    padding: 0 30rpx 30rpx 30rpx;
+}
+.h1{
+    padding-top: 30rpx;
+    padding-bottom: 15rpx;
+    line-height:35rpx;
+}
+.intro .sk{
+    height: 28rpx;
+    width: 15rpx;
+    background: #7ED321;
+    float: left;
+    margin-top: 6rpx;
+}
+.intro .tit{
+    font-size: 28rpx;
+    text-align: right;
+    padding-left: 5rpx;
+    margin-bottom: 30rpx;
+}
+.intro .neirong{
+    font-size: 14px;
+    color: #000000;
+    line-height:35rpx;
+}

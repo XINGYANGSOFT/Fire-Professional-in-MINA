@@ -1,0 +1,14 @@
+<!--pages/caofa/caofa.wxml-->
+<view class="search">
+  <input class="search_box" placeholder="搜索" bindtap="bindFocus">
+  </input>
+</view>
+
+<scroll-view class="body" scroll-y="ture">
+    <navigator class="item" url="/pages/caofa/item/item?id={{item.id}}" wx:for="{{qclist}}">
+        <view>
+            <text>{{item.name}}</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</scroll-view>

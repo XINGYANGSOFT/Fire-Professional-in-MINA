@@ -1,0 +1,12 @@
+<!--pages/search/search.wxml-->
+<view class="search">
+  <input class="search_box" placeholder="搜索" confirm-type="search" bindinput="sousuo" focus/>
+</view>
+<scroll-view class="body" scroll-y="ture">
+    <navigator class="item" url="/pages/{{fc}}/item/item?id={{item.id}}" wx:for="{{qclist}}">
+        <view>
+            <text>{{item.name}}</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</scroll-view>

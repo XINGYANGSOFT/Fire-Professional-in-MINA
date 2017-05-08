@@ -1,0 +1,51 @@
+CREATE TABLE `xcx_qicai` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`fenlei` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`zucheng` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`xingneng` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`yongtu` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`shiyong` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`zhuyi` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`pic` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+CHECKSUM=0
+DELAY_KEY_WRITE=0;
+
+
+CREATE TABLE `xcx_xunlian` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` text NULL,
+	`mudi` text NULL,
+	`qichai` text NULL,
+	`caozuo` text NULL,
+	`yaoqiu` text NULL,
+	`chengji` text NULL,
+	`pic` text NULL,
+	`chaxun` int(11) NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+CHECKSUM=0
+DELAY_KEY_WRITE=0;
+
+CREATE TABLE `xcx_caofa` (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`name` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`fenlei` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`mudi` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`changdi` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`zaiqing` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`renyuan` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`caozuo` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`yaoqiu` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`pingpan` text CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+	`no` int(11) NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=MyISAM
+DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
+CHECKSUM=0
+DELAY_KEY_WRITE=0;
+

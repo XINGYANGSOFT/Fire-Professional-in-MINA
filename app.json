@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/xunlian/xunlian",
     "pages/xunlian/item/item",
@@ -8,36 +8,42 @@
     "pages/faxian/faxian",
     "pages/faxian/guanyu/guanyu",
     "pages/search/search",
-    "pages/index/item/item"
+    "pages/index/item/item",
+    "pages/faxian/fuhao/fuhao"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "消防业务小程序",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTitleText": "消防业务",
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
     "color": "#000",
-    "list": [{
-      "iconPath":"images/1水枪icon.png",
-      "selectedIconPath":"images/水枪icon.png",
-      "pagePath": "pages/index/index",
-      "text": "器材"
-    }, {
-      "iconPath":"images/1训练icon.png",
-      "selectedIconPath":"images/训练icon.png",
-      "pagePath": "pages/xunlian/xunlian",
-      "text": "训练"
-    }, {
-      "iconPath":"images/1操法icon.png",
-      "selectedIconPath":"images/操法icon.png",
-      "pagePath": "pages/caofa/caofa",
-      "text": "操法"
-    }, {
-      "iconPath":"images/1提问icon.png",
-      "selectedIconPath":"images/提问icon.png",
-      "pagePath": "pages/faxian/faxian",
-      "text": "发现"
-    }]
+    "list": [
+      {
+        "iconPath": "images/1水枪icon.png",
+        "selectedIconPath": "images/水枪icon.png",
+        "pagePath": "pages/index/index",
+        "text": "器材"
+      },
+      {
+        "iconPath": "images/1训练icon.png",
+        "selectedIconPath": "images/训练icon.png",
+        "pagePath": "pages/xunlian/xunlian",
+        "text": "训练"
+      },
+      {
+        "iconPath": "images/1操法icon.png",
+        "selectedIconPath": "images/操法icon.png",
+        "pagePath": "pages/caofa/caofa",
+        "text": "操法"
+      },
+      {
+        "iconPath": "images/1提问icon.png",
+        "selectedIconPath": "images/提问icon.png",
+        "pagePath": "pages/faxian/faxian",
+        "text": "发现"
+      }
+    ]
   }
 }

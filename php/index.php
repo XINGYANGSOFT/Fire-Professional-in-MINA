@@ -98,4 +98,38 @@ if ($_GET["a"]=="s"){ //搜索
         mysql_close($con);
         }
     }
+
+if ($_GET["a"]=="qcsj"){ //器材随机
+    $qcarr = array("1","3","5","7","9");
+    $qcid = array_rand($qcarr,1);
+    $qcud = $qcarr[$qcid];
+    $json = json_encode($qcud);
+    header('content-type:application/json;charset=utf8');
+    print_r($json);
+    }
+
+if($_GET["a"]=="sj"){
+    if($_GET["z"]=="qc"){
+        $sql = "select id from xcx_qichai";
+    }elseif ($_GET["z"]=="xl") {
+        $sql = "select id from xcx_xunlian";
+    }else{
+        $sql = "select id from xcx_caofa";
+    }
+    $result = mysql_query($sql,$con);
+    $result1=array();
+    while ($row=mysql_fetch_array($result,MYSQL_ASSOC))
+    {
+        $result1[] = $row["id"];
+    }
+    $qcarr = $result1;
+    $qcid = array_rand($qcarr,1);
+    $qcud = $qcarr[$qcid];
+    $json = json_encode($qcud);
+    header('content-type:application/json;charset=utf8');
+    print_r($json);
+
+    //关闭连接
+    mysql_close($con);
+}
 ?>

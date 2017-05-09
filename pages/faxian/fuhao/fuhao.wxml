@@ -1,0 +1,115 @@
+<!--fuhao.wxml-->
+<view class="body">
+	<view class="item">
+		<text>m</text>
+		<text class="zw">米（长度单位）</text>
+	</view>
+	<view class="item">
+		<text>cm</text>
+		<text class="zw">厘米（长度单位）</text>
+	</view>
+	<view class="item">
+		<text>mm</text>
+		<text class="zw">毫米（长度单位）</text>
+	</view>
+	<view class="item">
+		<text>m²</text>
+		<text class="zw">平方米（面积单位）</text>
+	</view>
+	<view class="item">
+		<text>cm²</text>
+		<text class="zw">平方厘米（面积单位）</text>
+	</view>
+	<view class="item">
+		<text>mm²</text>
+		<text class="zw">平方毫米（面积单位）</text>
+	</view>
+	<view class="item">
+		<text>m³</text>
+		<text class="zw">立方米（体积单位）</text>
+	</view>
+	<view class="item">
+		<text>cm³</text>
+		<text class="zw">立方厘米（体积单位）</text>
+	</view>
+	<view class="item">
+		<text>mm³</text>
+		<text class="zw">立方毫米（体积单位）</text>
+	</view>
+	<view class="item">
+		<text>g</text>
+		<text class="zw">克（重量单位）</text>
+	</view>
+	<view class="item">
+		<text>kg</text>
+		<text class="zw">千克（重量单位）</text>
+	</view>
+	<view class="item">
+		<text>T</text>
+		<text class="zw">吨（重量单位）</text>
+	</view>
+	<view class="item">
+		<text>bar</text>
+		<text class="zw">1bar=0.1MPa 巴（压强单位）</text>
+	</view>
+	<view class="item">
+		<text>Pa</text>
+		<text class="zw">大气压101325Pa  帕（压强单位）</text>
+	</view>
+	<view class="item">
+		<text>MPa</text>
+		<text class="zw">1MPa=1000kPa 兆帕（压强单位）</text>
+	</view>
+	<view class="item">
+		<text>℃</text>
+		<text class="zw">摄氏度（温度单位）</text>
+	</view>
+	<view class="item">
+		<text>K</text>
+		<text class="zw">1℃=274.15K 开尔文（温度单位）</text>
+	</view>
+	<view class="item">
+		<text>H</text>
+		<text class="zw">小时（时间单位）</text>
+	</view>
+	<view class="item">
+		<text>Min</text>
+		<text class="zw">分钟（时间单位）</text>
+	</view>
+	<view class="item">
+		<text>S</text>
+		<text class="zw">秒（时间单位）</text>
+	</view>
+	<view class="item">
+		<text>mL</text>
+		<text class="zw">毫升（容积单位）</text>
+	</view>
+	<view class="item">
+		<text>L</text>
+		<text class="zw">1L=1立方分米 升（容积单位）</text>
+	</view>
+	<view class="item">
+		<text>W</text>
+		<text class="zw">瓦特（功率单位）</text>
+	</view>
+	<view class="item">
+		<text>KW</text>
+		<text class="zw">千瓦（功率单位）</text>
+	</view>
+	<view class="item">
+		<text>r</text>
+		<text class="zw">转（转速符号）</text>
+	</view>
+	<view class="item">
+		<text>V</text>
+		<text class="zw">伏特（电压单位）</text>
+	</view>
+	<view class="item">
+		<text>A</text>
+		<text class="zw">安培（电流单位）</text>
+	</view>
+	<view class="item">
+		<text>Hz</text>
+		<text class="zw">赫兹（频率单位）</text>
+	</view>
+</view>

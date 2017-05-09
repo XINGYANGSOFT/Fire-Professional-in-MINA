@@ -8,25 +8,25 @@
     </navigator>
 </view>
 <view class="body">
-    <navigator class="item" bindtap="cyqcsj" url="/pages/index/item/item?id={{id}}" >
+    <navigator class="item" bindtap="cyqcsj" url="/pages/index/item/item?id={{cyid}}" >
         <view>
             <text>抽取常用器材</text>
             <image src="/images/next.png"></image>
         </view>
     </navigator>
-		<navigator class="item" bindtap="qcsj" url="/pages/index/item/item?id={{id}}" >
+		<navigator class="item" bindtap="qcsj" url="/pages/index/item/item?id={{qcid}}" >
         <view>
             <text>抽取全部器材</text>
             <image src="/images/next.png"></image>
         </view>
     </navigator>
-    <navigator class="item" bindtap="xlsj" url="/pages/xunlian/item/item?id={{id}}" >
+    <navigator class="item" bindtap="xlsj" url="/pages/xunlian/item/item?id={{xlid}}" >
         <view>
             <text>抽取训练项目</text>
             <image src="/images/next.png"></image>
         </view>
     </navigator>
-    <navigator class="item" bindtap="cfsj" url="/pages/caofa/item/item?id={{id}}" >
+    <navigator class="item" bindtap="cfsj" url="/pages/caofa/item/item?id={{cfid}}" >
         <view>
             <text>抽取操法</text>
             <image src="/images/next.png"></image>

@@ -5,7 +5,8 @@
     "pages/xunlian/item/item",
     "pages/caofa/caofa",
     "pages/caofa/item/item",
-    "pages/chouqian/chouqian",
+    "pages/faxian/faxian",
+    "pages/faxian/guanyu/guanyu",
     "pages/search/search",
     "pages/index/item/item"
   ],
@@ -35,8 +36,8 @@
     }, {
       "iconPath":"images/1提问icon.png",
       "selectedIconPath":"images/提问icon.png",
-      "pagePath": "pages/chouqian/chouqian",
-      "text": "抽签"
+      "pagePath": "pages/faxian/faxian",
+      "text": "发现"
     }]
   }
 }

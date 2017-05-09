@@ -1,0 +1,38 @@
+<!--pages/chouqian/chouqian.wxml-->
+<view class="body">
+    <navigator class="item" url="" >
+        <view>
+            <text>单位符号说明</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</view>
+<view class="body">
+    <navigator class="item" url="" >
+        <view>
+            <text>随机抽取器材</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+    <navigator class="item" url="" >
+        <view>
+            <text>抽取训练项目</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+    <navigator class="item" url="" >
+        <view>
+            <text>抽取操法</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</view>
+<view class="body">
+    <navigator class="item" url="/pages/faxian/guanyu/guanyu" >
+        <view>
+            <text>关于</text>
+            <image src="/images/next.png"></image>
+        </view>
+    </navigator>
+</view>
+

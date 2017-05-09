@@ -30,17 +30,5 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
-  },
-  selectClick:function(event){
-    for(var i = 0; i < this.data.xiangmu.length;i++){  
-        if(event.currentTarget.id == i){  
-              this.data.xiangmu[i].icon = "success_no_circle"   
-           }  
-           else  
-          {      
-             this.data.xiangmu[i].icon = ""  
-          }  
-      }  
-       this.setData(this.data)
   }
 })

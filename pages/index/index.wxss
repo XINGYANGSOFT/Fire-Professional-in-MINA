@@ -34,7 +34,7 @@
 }
 .item image{
   margin-right: 30rpx;
-  height: 39rpx;
-  width: 25rpx;
+  height: 29rpx;
+  width: 18rpx;
   float: right;
 }

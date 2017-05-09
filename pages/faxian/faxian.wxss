@@ -1,0 +1,23 @@
+/* pages/chouqian/chouqian.wxss */
+.body{
+  padding-top: 30rpx;
+  /*position: relative;*/
+  z-index: 0;
+}
+.item{
+  background: #FFFFFF;
+  padding: 30rpx 0 0 30rpx;
+}
+.item view{
+  height: 70rpx;
+  border-bottom: 1rpx solid #E6E6EA;
+}
+.item text{
+  font-size: 34rpx;
+}
+.item image{
+  margin-right: 30rpx;
+  height: 39rpx;
+  width: 25rpx;
+  float: right;
+}

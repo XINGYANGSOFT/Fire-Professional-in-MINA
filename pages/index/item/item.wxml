@@ -1,5 +1,5 @@
 <!--pages/item/item.wxml-->
-<image class="pic" src="{{pic}}"></image>
+<image class="pic" wx:if="{{hid == 'ture'}}" src="{{pic}}"></image>
 <view class="title">
     <text class="name">{{qc[0].name}}\n</text>
     <text class="lei">{{qc[0].fenlei}}</text>

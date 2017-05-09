@@ -18,10 +18,17 @@ Page({
           },
           method: 'GET', 
           success: function(res){
-            wx.hideToast();            
+            wx.hideToast();
+            if (res.data[0].pic == null){
+              var hid = 'false'
+            }else{
+              hid = 'ture'
+            }
+            console.log(hid)            
             that.setData({
                 qc:res.data,
                 pic:picurl+res.data[0].pic,
+                hid:hid
             })
           },
           fail: function() {

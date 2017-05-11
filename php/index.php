@@ -14,10 +14,12 @@ if ($_GET["a"]=="qc"){ //获取器材列表
     if(isset($_GET["id"])){
         $id = $_GET["id"];
         $sql = "SELECT *  FROM `xcx_qicai` WHERE id='$id'";
+        $chaxun = "UPDATE xcx_qicai SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
         $sql = "SELECT `id`,`name`  FROM `xcx_qicai` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
+    mysql_query($chaxun,$con);
     $result1=array();
     while ($row=mysql_fetch_array($result,MYSQL_ASSOC))
     {
@@ -35,10 +37,12 @@ if ($_GET["a"]=="xl"){ //获取训练列表
     if(isset($_GET["id"])){
         $id = $_GET["id"];
         $sql = "SELECT *  FROM `xcx_xunlian` WHERE id='$id'";
+        $chaxun = "UPDATE xcx_xunlian SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
         $sql = "SELECT `id`,`name`  FROM `xcx_xunlian` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
+    mysql_query($chaxun,$con);
     $result1=array();
     while ($row=mysql_fetch_array($result,MYSQL_ASSOC))
     {
@@ -56,10 +60,12 @@ if ($_GET["a"]=="cf"){ //获取训练列表
     if(isset($_GET["id"])){
         $id = $_GET["id"];
         $sql = "SELECT *  FROM `xcx_caofa` WHERE id='$id'";
+        $chaxun = "UPDATE xcx_caofa SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
         $sql = "SELECT `id`,`name`  FROM `xcx_caofa` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
+    mysql_query($chaxun,$con);
     $result1=array();
     while ($row=mysql_fetch_array($result,MYSQL_ASSOC))
     {

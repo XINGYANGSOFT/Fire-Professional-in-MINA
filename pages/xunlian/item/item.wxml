@@ -2,6 +2,7 @@
 <view class="title">
     <text class="name">{{qc[0].name}}\n</text>
     <text class="lei">{{qc[0].fenlei}}</text>
+    <text class="lei" style="float:right;margin-right:30rpx;">来了{{qc[0].chaxun}}动</text>
 </view>
 <view class="intro">
     <view class="h1">
@@ -23,6 +24,9 @@
     <view class="h1">
         <text class="tit">成绩评定</text>
         <text class="neirong">{{qc[0].chengji}}</text>
+    </view>
+    <view class="mianze">
+        <text>页面信息仅供参考，使用器材和训练方法前需要接受专业训练</text>
     </view>
 </view>
 

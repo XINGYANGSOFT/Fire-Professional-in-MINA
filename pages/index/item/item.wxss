@@ -30,25 +30,29 @@
     line-height:35rpx;
 }
 .h2{
-    flex:0 0 100rpx;
+    flex:0 0 60rpx;
     line-height:35rpx;
 }
 .intro .tit{
-    flex:0 0 100rpx;
+    flex:0 0 60rpx;
     font-size: 14px;
     color: #9B9B9B;
-    float: right;
-    text-align: right;
 }
 .intro .tit1{
-    flex:0 0 100rpx;
+    flex:0 0 60rpx;
     font-size: 14px;
     color: #9B9B9B;
-    float: right;
 }
 .intro .neirong{
     font-size: 14px;
     color: #000000;
     padding-left: 15px;
     line-height:35rpx;
+}
+.intro .mianze{
+    padding-top: 30rpx;
+    font-size: 12px;
+    color: #9B9B9B;
+    line-height:35rpx;
+    text-align:center;
 }

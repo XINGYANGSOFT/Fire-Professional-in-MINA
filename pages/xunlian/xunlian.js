@@ -1,5 +1,5 @@
 // pages/xunlian/xunlian.js
-var url = "https://winkcn.com/wechat/xfyw/?a=xl"
+var url = "https://api.xingguiyang.com/xfyw/?a=xl"
 Page({
   data: {},
   onLoad: function () {

@@ -1,5 +1,5 @@
 // pages/search/search.js
-var url = "https://winkcn.com/wechat/xfyw/?a=s"
+var url = "https://api.xingguiyang.com/xfyw/?a=s"
 var fc
 Page({
   data:{},

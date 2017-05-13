@@ -5,10 +5,13 @@
 </view>
 
 <scroll-view class="body" scroll-y="ture">
-    <navigator class="item" url="/pages/caofa/item/item?id={{item.id}}" wx:for="{{qclist}}">
-        <view>
-            <text>{{item.name}}</text>
-            <image src="/images/next.png"></image>
-        </view>
-    </navigator>
+    <view class="fenlei" wx:for="{{qclist}}" wx:for-index="fl" wx:for-item="itemName">
+      <text class="fl_name">{{fl}}</text>
+      <navigator class="item" url="item/item?id={{item.id}}" wx:for="{{itemName}}">
+          <view>
+              <text>{{item.name}}</text>
+              <image src="/images/next.png"></image>
+          </view>
+      </navigator>
+    </view>
 </scroll-view>

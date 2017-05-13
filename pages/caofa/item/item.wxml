@@ -6,7 +6,7 @@
     <view class="h1">
         <view class="sk"></view>
         <text class="tit">训练目的\n</text>
-        <text class="neirong">通过训练，使参训人员掌握石油液化气槽罐车泄露处置的程序和方法，提高指挥员的指挥能力和班组协同作战能力{{qc[0].mudi}}</text>
+        <text class="neirong">{{qc[0].mudi}}</text>
     </view>
     <view class="h1">
         <view class="sk"></view>

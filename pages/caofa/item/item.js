@@ -1,5 +1,5 @@
 // pages/caofa/item/item.js
-var url = "https://winkcn.com/wechat/xfyw/?a=cf"
+var url = "https://api.xingguiyang.com/xfyw/?a=cf"
 Page({
   data:{},
   onLoad:function(e){

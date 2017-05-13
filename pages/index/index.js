@@ -1,5 +1,5 @@
 //index.js
-var url = "https://winkcn.com/wechat/xfyw/?a=qc"
+var url = "https://api.xingguiyang.com/xfyw/?a=qc"
 Page({
   data: {},
   onLoad: function () {

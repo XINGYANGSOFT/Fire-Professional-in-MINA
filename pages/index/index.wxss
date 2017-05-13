@@ -20,6 +20,14 @@
   /*padding-top: 100rpx;*/
   /*position: relative;*/
   z-index: 0;
+  background:#f4f4f4; 
+}
+.fl_name{
+  margin:5rpx 0rpx 5rpx 0rpx;
+  padding-left: 30rpx;
+  font-size: 25rpx;
+  display: block;
+  font-weight: bold;
 }
 .item{
   background: #FFFFFF;

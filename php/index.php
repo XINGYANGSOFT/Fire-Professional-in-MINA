@@ -9,6 +9,14 @@ mysql_select_db($mysql_database); //打开数据库
 $AppID="wx1faab87f6037d2fc";
 $AppSecret="e16fdd165eddb50102067aa4ff687d56";
 
+function fenlei($arr){
+    $r =   array();
+    foreach($arr as $k=>$v){
+        $r[$v['fenlei']][]    =   $v;
+    }
+    return $r;
+}
+
 
 if ($_GET["a"]=="qc"){ //获取器材列表
     if(isset($_GET["id"])){
@@ -16,7 +24,7 @@ if ($_GET["a"]=="qc"){ //获取器材列表
         $sql = "SELECT *  FROM `xcx_qicai` WHERE id='$id'";
         $chaxun = "UPDATE xcx_qicai SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
-        $sql = "SELECT `id`,`name`  FROM `xcx_qicai` ORDER BY id ASC";
+        $sql = "SELECT `id`,`fenlei`,`name`  FROM `xcx_qicai` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
     mysql_query($chaxun,$con);
@@ -25,7 +33,12 @@ if ($_GET["a"]=="qc"){ //获取器材列表
     {
         $result1[] = $row;
     }
-    $json = json_encode($result1);
+    if(!isset($_GET["id"])){
+        $result2 = fenlei($result1);
+    }else{
+        $result2 = $result1;
+    }
+    $json = json_encode($result2);
     header('content-type:application/json;charset=utf8');
     print_r($json);
 
@@ -39,7 +52,7 @@ if ($_GET["a"]=="xl"){ //获取训练列表
         $sql = "SELECT *  FROM `xcx_xunlian` WHERE id='$id'";
         $chaxun = "UPDATE xcx_xunlian SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
-        $sql = "SELECT `id`,`name`  FROM `xcx_xunlian` ORDER BY id ASC";
+        $sql = "SELECT `id`,`fenlei`,`name`  FROM `xcx_xunlian` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
     mysql_query($chaxun,$con);
@@ -48,7 +61,12 @@ if ($_GET["a"]=="xl"){ //获取训练列表
     {
         $result1[] = $row;
     }
-    $json = json_encode($result1);
+    if(!isset($_GET["id"])){
+        $result2 = fenlei($result1);
+    }else{
+        $result2 = $result1;
+    }
+    $json = json_encode($result2);
     header('content-type:application/json;charset=utf8');
     print_r($json);
 
@@ -62,7 +80,7 @@ if ($_GET["a"]=="cf"){ //获取训练列表
         $sql = "SELECT *  FROM `xcx_caofa` WHERE id='$id'";
         $chaxun = "UPDATE xcx_caofa SET chaxun = chaxun + 1 WHERE id='$id'";
     }else{
-        $sql = "SELECT `id`,`name`  FROM `xcx_caofa` ORDER BY id ASC";
+        $sql = "SELECT `id`,`fenlei`,`name`  FROM `xcx_caofa` ORDER BY id ASC";
     }
     $result = mysql_query($sql,$con);
     mysql_query($chaxun,$con);
@@ -71,7 +89,12 @@ if ($_GET["a"]=="cf"){ //获取训练列表
     {
         $result1[] = $row;
     }
-    $json = json_encode($result1);
+    if(!isset($_GET["id"])){
+        $result2 = fenlei($result1);
+    }else{
+        $result2 = $result1;
+    }
+    $json = json_encode($result2);
     header('content-type:application/json;charset=utf8');
     print_r($json);
 
@@ -138,4 +161,6 @@ if($_GET["a"]=="sj"){
     //关闭连接
     mysql_close($con);
 }
+
+
 ?>

@@ -1,5 +1,5 @@
 // pages/chouqian/chouqian.js
-var url = "https://winkcn.com/wechat/xfyw/"
+var url = "https://api.xingguiyang.com/xfyw/"
 Page({
   data:{},
 	cyqcsj: function () { //抽取常用器材

@@ -1,6 +1,6 @@
 // pages/item/item.js
-var url = "https://winkcn.com/wechat/xfyw/?a=qc"
-var picurl = "https://winkcn.com/wechat/xfyw/images/"
+var url = "https://api.xingguiyang.com/xfyw/?a=qc"
+var picurl = "https://api.xingguiyang.com/xfyw/images/"
 Page({
   data:{},
   onLoad:function(e){

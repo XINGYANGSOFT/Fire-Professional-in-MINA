@@ -11,10 +11,16 @@ $AppSecret="e16fdd165eddb50102067aa4ff687d56";
 
 function fenlei($arr){
     $r =   array();
+    $rr =   array();
     foreach($arr as $k=>$v){
         $r[$v['fenlei']][]    =   $v;
     }
-    return $r;
+    $i = 0;
+    foreach ($r as $rk=>$rv) {
+        $i++;
+        $rr[] =  array('fid'=>$i,'fl'=>$rk,'ft'=>$rv);
+    }
+    return $rr;
 }
 
 
@@ -41,7 +47,6 @@ if ($_GET["a"]=="qc"){ //获取器材列表
     $json = json_encode($result2);
     header('content-type:application/json;charset=utf8');
     print_r($json);
-
     //关闭连接
     mysql_close($con);
 }

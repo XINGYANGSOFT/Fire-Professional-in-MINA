@@ -15,7 +15,7 @@ Page({
           data: {},
           method: 'GET', 
           success: function(res){
-            wx.hideToast();            
+            wx.hideToast();        
             that.setData({
                 qclist:res.data,
             })
@@ -39,9 +39,38 @@ Page({
           }
         })
   },
+  onShow:function(){
+    console.log('onShowed')
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        var height = res.windowHeight;   //footerpannelheight为底部组件的高度
+        that.setData({
+          srollHeight: height
+        });
+      }
+    })
+  },
   bindFocus:function(){
         wx.navigateTo({
         url: '/pages/search/search?f=index'
       })
-    }
+  },
+  scrolltoupper:function(){
+    console.log("chufa")
+  },
+  choiceWordindex: function (event) { 
+  let wordindex = 'id' + event.currentTarget.dataset.wordindex;  
+  if(wordindex == '灭火类') {
+    this.setData({
+      toView: 'id1',
+    })
+  } else {  
+    this.setData({
+      toView: wordindex,
+    })
+  }  
+  console.log(wordindex);
+  console.log(this.data.toView);  
+}  
 })

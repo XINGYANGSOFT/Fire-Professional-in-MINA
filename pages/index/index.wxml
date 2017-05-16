@@ -1,16 +1,20 @@
 <!--index.wxml-->
-<view class="search"  bindtap="bindFocus">
-  <input class="search_box" placeholder="搜索" bindfocus="bindFocus"/>
-</view>
-
-<scroll-view class="body" scroll-y="ture">
-    <view class="fenlei" wx:for="{{qclist}}" wx:for-index="fl" wx:for-item="itemName">
-      <text class="fl_name">{{fl}}</text>
-      <navigator class="item" url="/pages/index/item/item?id={{item.id}}" wx:for="{{itemName}}">
-          <view>
-              <text>{{item.name}}</text>
-              <image src="/images/next.png"></image>
-          </view>
-      </navigator>
-    </view>
+<scroll-view class="body" scroll-y="ture" style="height:{{srollHeight}}px;"  scroll-into-view="{{toView}}">
+  <view class="search" bindtap="bindFocus">
+    <input class="search_box" placeholder="搜索" bindfocus="bindFocus"/>
+  </view>
+  <view class="fenlei" wx:for="{{qclist}}">
+    <view class="fl_name" id="id{{item.fid}}">{{item.fl}}</view>
+    <navigator class="item" url="item/item?id={{item.id}}" wx:for="{{item.ft}}">
+        <view>
+            <text>{{item.name}}</text>
+        </view>
+    </navigator>
+  </view>
 </scroll-view>
+
+<view class="index">  
+  <text wx:for="{{qclist}}" bindtap="choiceWordindex" data-wordindex="{{item.fid}}">  
+    {{item.fl}}  
+  </text>  
+</view>  

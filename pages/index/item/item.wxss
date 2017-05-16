@@ -18,7 +18,7 @@
 }
 .intro{
     background: #ffffff;
-    min-height:800rpx; 
+    height:auto; 
     margin-top: 10rpx;
     padding: 0 30rpx 30rpx 30rpx;
 }

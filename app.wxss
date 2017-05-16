@@ -3,4 +3,74 @@ page {
   display: block;  
   min-height: 100%;  
   background-color: #EFEFF4;  
+}
+/*搜索框部分*/
+.search{
+  height: 80rpx;
+  width: 100%;
+  background: #EFEFF4;
+  /*position: fixed;*/
+}
+.search_box{
+  background: #FFFFFF;
+  border: 1rpx solid #E6E6EA;
+  border-radius: 5.52px;
+  margin: 15rpx 15rpx 10rpx 15rpx;
+  height: 60rpx;
+  text-align:center;
+  width: calc(100% - 30rpx);
+}
+/*列表部分*/
+.body{
+  z-index: 0;
+  float: left;
+}
+.fl_name{
+  margin:5rpx 0rpx 5rpx 0rpx;
+  padding-left: 30rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.fl_name1{
+  margin:5rpx 0rpx 5rpx 0rpx;
+  background:#f4f4f4; 
+  padding-left: 30rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  position: fixed;
+  top:0;
+  z-index: 9;
+}
+.item{
+  background: #FFFFFF;
+  padding: 30rpx 0 0 30rpx;
+}
+.item view{
+  height: 70rpx;
+  border-bottom: 1rpx solid #E6E6EA;
+}
+.item text{
+  font-size: 34rpx;
+}
+.item image{ /*列表右部箭头*/
+  margin-right: 30rpx;
+  height: 29rpx;
+  width: 18rpx;
+  float: right;
+}
+.index {  /*右侧快捷导航*/
+  float: right;  
+  position: fixed;  
+  right: 0;  
+  margin-top: 20%;  
+  margin-right: 5rpx;   
+  font-size: 11px; 
 }  
+  
+.index text {  /*右侧快捷导航*/
+  display: flex;  
+  line-height: 35rpx;
+  width: 50rpx;
+  height: 70rpx;   
+  overflow-y: hidden;
+}    

@@ -1,5 +1,5 @@
 <!--pages/chouqian/chouqian.wxml-->
-<view class="body">
+<view class="body_gd">
     <navigator class="item" url="/pages/faxian/fuhao/fuhao" >
         <view>
             <text>单位符号说明</text>
@@ -7,7 +7,7 @@
         </view>
     </navigator>
 </view>
-<view class="body">
+<view class="body_gd">
     <navigator class="item" bindtap="cyqcsj" url="/pages/index/item/item?id={{cyid}}" >
         <view>
             <text>抽取常用器材</text>
@@ -33,7 +33,7 @@
         </view>
     </navigator>
 </view>
-<view class="body">
+<view class="body_gd">
     <navigator class="item" url="/pages/faxian/guanyu/guanyu" >
         <view>
             <text>关于</text>

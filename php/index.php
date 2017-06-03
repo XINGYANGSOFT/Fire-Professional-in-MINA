@@ -6,8 +6,7 @@ mysql_query("set names 'utf8'"); //数据库输出编码
 mysql_select_db($mysql_database); //打开数据库
 
 
-$AppID="wx1faab87f6037d2fc";
-$AppSecret="e16fdd165eddb50102067aa4ff687d56";
+
 
 function fenlei($arr){
     $r =   array();
